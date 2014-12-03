@@ -2,5 +2,4 @@
 <p>Name: <%= @user.name if @user.name %></p>
 <p>Email: <%= @user.email if @user.email %></p>
 
-<%= button_to "Create a New Recipe", pokemons_new_path, :class => "button medium", :method => :get %>
-
+<%= button_to "Create a Recipe!", recipes_new_path, :class => "button medium", :method => :get %>
