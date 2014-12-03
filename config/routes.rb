@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'visitors#index'
   devise_for :users
+  devise_for :recipes
   resources :users
 
   post '/recipes/create', to: 'recipes#create', as: 'recipes_create'

@@ -1,5 +1,13 @@
-<h3>User</h3>
-<p>Name: <%= @user.name if @user.name %></p>
-<p>Email: <%= @user.email if @user.email %></p>
+<h3>Welcome <%= @user.name if @user.name %>!</h3>
+<h3>Let's get cooking!</h3>
 
 <%= button_to "Create a Recipe!", recipes_new_path, :class => "button medium", :method => :get %>
+
+<h3>Recipes:</h3>
+<%recipe = Recipe.all%>
+<%recipe.each do |recipe|%>
+	<%name = recipe.name%>	
+	<%= link_to name, recipe_path(recipe.id), :method => "get" %>
+	<p>Level: <%=recipe.level%></p>
+	<p>Description: <%=recipe.description%></p>
+<%end%>

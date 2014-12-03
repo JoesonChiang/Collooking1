@@ -1,0 +1,9 @@
+<h1>Create a New Recipe!</h1>
+
+<%= simple_form_for Recipe.new, url: {action: "create"} do |f| %>
+    <%= f.input :name, label: 'Name:'%>
+    <%= f.input :description, label: 'Description:'%>
+    <%= f.input :instructions, label: 'Instructions:'%>
+    <%= f.input :level, label: 'Level:', hint:'Mark the level you think this recipe deserves'%>
+    <%= f.button :submit%>
+<%end%>
