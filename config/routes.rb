@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   devise_for :recipes
   resources :users
 
+  resources :recipes
+
   post '/recipes/create', to: 'recipes#create', as: 'recipes_create'
 
   get '/recipes/new', to: 'recipes#new', as: 'recipes_new'

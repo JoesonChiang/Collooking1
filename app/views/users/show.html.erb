@@ -8,6 +8,7 @@
 <%recipe.each do |recipe|%>
 	<%name = recipe.name%>	
 	<%= link_to name, recipe_path(recipe.id), :method => "get" %>
+	</p>
 	<p>Level: <%=recipe.level%></p>
 	<p>Description: <%=recipe.description%></p>
 <%end%>
