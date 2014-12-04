@@ -1,0 +1,11 @@
+
+
+.chefs {
+border-radius:50% 50% 50% 50%;  
+display: inline-block;
+width:200px;
+height:200px;
+/*  background-position: 50% 50%;
+ background-repeat: no-repeat;*/
+
+}

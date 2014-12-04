@@ -1,11 +1,65 @@
-<h3>Welcome to Collooking</h3>
-<p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
-<p>blah blha blah</p>
+<link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
 
-<h3>Recipes:</h3>
-<%recipe = Recipe.all%>
-<%recipe.each do |recipe|%>
-	<%name = recipe.name%>	
-	<%= link_to name, recipe_path(recipe), :method => "get" %>
-	</p>
-<%end%>
+<body>
+<div id="content_box">
+	<div id="content">
+		<h1 id="title"><center>Welcome to Collooking</center></h1>
+		<!-- <p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p> -->
+		<h3>Top Recipes</h3>
+
+		<!-- <img src="assets/salmon.jpg" class="locationicon">\
+		<img src="assets/chicken_asparagus.jpg" class="locationicon">
+		<img src="assets/hamburger.jpg" class="locationicon">
+		<img src="assets/mashed_potatoes.jpg" class="locationicon"> -->
+
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+		 
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <img src="assets/salmon.jpg" alt="..." height="1500" width="800">
+		      <div class="carousel-caption">
+		          <h3>Pan Seared Salmon with a zest of Lemon and Bell Peppers</h3>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="assets/chicken_asparagus.jpg" alt="..." height="1500" width="700">
+		      <div class="carousel-caption">
+		          <h3>Seasoned Chicken topped with herbs and a side of asparagus</h3>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="assets/hamburger.jpg" alt="..." height="1500" width="800">
+		      <div class="carousel-caption">
+		          <h3>Juicy 100% Beef Patty Burger</h3>
+		      </div>
+		    </div>
+		  </div>
+		 
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right"></span>
+		  </a>
+		</div> <!-- Carousel -->
+		<h3>Top Chefs</h3>
+
+
+		<img src="assets/joeson_chiang.jpg" class="chefs">
+		<p>Joeson Chiang<p>
+		<img src="assets/aaron_lopez.jpg"class="chefs">
+		<p>Aaron Lopez<p>
+		<img src="assets/steven_cheng.jpg" class="chefs">
+		<p>Steven Cheng<p>
+		<!-- <img src="assets/mashed_potatoes.jpg" class="locationicon"> -->
+	</div>
+</div>
+</body>

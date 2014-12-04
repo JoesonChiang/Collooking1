@@ -80,3 +80,19 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
+#content_box {
+  background-color:white;
+  height:100%;
+  width: 70%;
+  margin:auto;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+#content {
+  margin: 15px;
+}
+#title{
+  font-style: bold;
+  font-family: Tahoma;
+}
