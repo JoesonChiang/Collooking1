@@ -1,3 +1,11 @@
 <h3>Welcome to Collooking</h3>
 <p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
 <p>blah blha blah</p>
+
+<h3>Recipes:</h3>
+<%recipe = Recipe.all%>
+<%recipe.each do |recipe|%>
+	<%name = recipe.name%>	
+	<%= link_to name, recipe_path(recipe), :method => "get" %>
+	</p>
+<%end%>

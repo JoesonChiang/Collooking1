@@ -1,5 +1,6 @@
-<h3><%= @recipes.name %></h3>
-<p>Level: <%=@recipes.level%></p>
-<p>Description: <%=@recipes.description%></p>
-<p>Ingredients: <%=@recipes.ingredients%></p>
-<p>Instructions: <%=@recipes.instructions%></p>
+<h3><%= @recipe.name %></h3>
+<%= image_tag @recipe.photo.url %>  
+<p>Level: <%=@recipe.level%></p>
+<p>Description: <%=@recipe.description%></p>
+<p>Ingredients: <%=@recipe.ingredients%></p>
+<p>Instructions: <%=@recipe.instructions%></p>

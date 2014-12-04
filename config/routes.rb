@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   devise_for :users
   devise_for :recipes
   resources :users
-
   resources :recipes
 
   post '/recipes/create', to: 'recipes#create', as: 'recipes_create'
