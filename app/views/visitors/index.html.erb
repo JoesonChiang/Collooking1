@@ -60,6 +60,16 @@
 		<img src="assets/steven_cheng.jpg" class="chefs">
 		<p>Steven Cheng<p>
 		<!-- <img src="assets/mashed_potatoes.jpg" class="locationicon"> -->
+
+		<h3>All Recipes:</h3>
+			<%recipe = Recipe.all%>
+			<%recipe.each do |recipe|%>
+			<%name = recipe.name%>	
+			<%= link_to name, recipe_path(recipe), :method => "get" %>
+			</p>
+			<p>Level: <%=recipe.level%></p>
+		<%end%>
 	</div>
 </div>
 </body>
+

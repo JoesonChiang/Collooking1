@@ -1,7 +1,12 @@
 class Recipe < ActiveRecord::Base
-	has_many :ingredients
 	belongs_to :user
-	has_attached_file :photo, :url => "/system/:attachment/:id/:style/:basename.:extension",  
-  :path => ":rails_root/public/system/:attachment/:id/:style/:basename.:extension" 
 	validates :name, presence: true, uniqueness: true
+
+	def self.search(search)
+  		if search
+    		find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+  		else
+    		find(:all)
+ 		end
+	end
 end

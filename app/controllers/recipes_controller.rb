@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
 	def index
-		@recipes = Recipe.all
+  		@projects = Project.search(params[:search])
 	end
 
 	def show

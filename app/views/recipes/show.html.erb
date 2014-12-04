@@ -1,6 +1,6 @@
 <h3><%= @recipe.name %></h3>
-<%= image_tag @recipe.photo.url %>  
+<img src="assets/omelette.jpg">
 <p>Level: <%=@recipe.level%></p>
 <p>Description: <%=@recipe.description%></p>
-<p>Ingredients: <%=@recipe.ingredients%></p>
-<p>Instructions: <%=@recipe.instructions%></p>
+<p>Ingredients: <%= simple_format(@recipe.ingredients) %></p>
+<p>Instructions: <%= simple_format(@recipe.instructions) %></p>
