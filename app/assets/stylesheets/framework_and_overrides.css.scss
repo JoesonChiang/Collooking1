@@ -96,3 +96,22 @@ section {
   font-style: bold;
   font-family: Tahoma;
 }
+.chefs {
+border-radius:50% 50% 50% 50%;  
+display: inline-block;
+width:200px;
+height:200px;
+float:left;
+margin: 5px;
+}
+#all_recipes{
+  clear:left;
+  text-align: center;
+  -webkit-column-count: 3; 
+}
+#all_recipes_title{
+  clear:left;
+}
+#des_ingre{
+  display:inline-block;
+}

@@ -54,21 +54,42 @@
 
 
 		<img src="assets/joeson_chiang.jpg" class="chefs">
-		<p>Joeson Chiang<p>
-		<img src="assets/aaron_lopez.jpg"class="chefs">
-		<p>Aaron Lopez<p>
+		<p class="chefs">Joeson Chiang<p>
+		<img src="assets/aaron_lopez.jpg" class="chefs">
+		<p class="chefs">Aaron Lopez<p>
 		<img src="assets/steven_cheng.jpg" class="chefs">
-		<p>Steven Cheng<p>
-		<!-- <img src="assets/mashed_potatoes.jpg" class="locationicon"> -->
+		<p class="chefs">Steven Cheng<p>
 
-		<h3>All Recipes:</h3>
+		</br></br>
+		<h3 id="all_recipes_title">All Recipes</h3>
+		</br>
+		<div id="all_recipes">
 			<%recipe = Recipe.all%>
 			<%recipe.each do |recipe|%>
 			<%name = recipe.name%>	
 			<%= link_to name, recipe_path(recipe), :method => "get" %>
 			</p>
 			<p>Level: <%=recipe.level%></p>
-		<%end%>
+			<%end%>
+		</div>
+
+		</br></br>
+		<p>Search For Your Recipes</p>
+		<!-- The terms of service are available at http://www.google.com/cse/docs/tos.html -->
+		<form name="cse" id="searchbox_demo" action="http://www.google.com/cse">
+		  <input type="hidden" name="cref" value="" />
+		  <input type="hidden" name="ie" value="utf-8" />
+		  <input type="hidden" name="hl" value="" />
+		  <input name="q" type="text" size="40" />
+		  <input type="submit" name="sa" value="Search" />
+		</form>
+		<!--<script type="text/javascript" src="https://www.google.com/cse/tools/onthefly?form=searchbox_demo&lang="></script>-->
+
+		<!--<div id='cse' style='width:100%'>Loading</div>
+		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+		<script type="text/javascript">google.load('search', '1');
+          google.setOnLoadCallback(function(){var cse = new google.search.
+          CustomSearchControl();cse.draw('cse');}, true);</script>-->
 	</div>
 </div>
 </body>

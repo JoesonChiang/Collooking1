@@ -1,3 +1,19 @@
 // Place all the styles related to the Recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#des_ingre {
+  display:inline-block;
+ 
+}
+#content_box {
+  background-color:white;
+  height:100%;
+  width: 70%;
+  margin:auto;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+#content {
+  margin: 15px;
+}

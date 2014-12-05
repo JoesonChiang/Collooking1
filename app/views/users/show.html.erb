@@ -18,4 +18,7 @@
 	</p>
 	<p>Level: <%=recipe.level%></p>
 	<p>Description: <%=recipe.description%></p>
+
+	<%= button_to "Edit a Recipe!", recipes_new_path, :class => "button medium", :method => :get %>
+
 <%end%>
