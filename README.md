@@ -9,6 +9,7 @@ To-Do
 4) Do a complete 180 on the UI
 5) Progress Tree???
 6) Following and Followers of users
+7)fake task
 
 
 Original Rails Decal Fall 2014 Readme
