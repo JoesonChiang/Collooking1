@@ -1,0 +1,13 @@
+
+<div id="content_box">
+	<div id="content">
+		<h3><%= @recipe.name %></h3>
+		<img src="assets/omelette.jpg">
+		<p>Level: <%=@recipe.level%></p>
+		<div id="des_ingre">
+			<p>Description: <%=@recipe.description%></p>
+			<p>Ingredients: <%= simple_format(@recipe.ingredients) %></p>
+		</div>
+		<p>Instructions: <%= simple_format(@recipe.instructions) %></p>
+	</div>
+</div>
