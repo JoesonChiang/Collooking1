@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
 	def index
-  		@projects = Project.search(params[:search])
+  		@recipes = Recipe.all
 	end
 
 	def show
@@ -26,7 +26,7 @@ class RecipesController < ApplicationController
 
 	def update
 		@recipe = Recipe.find(params[:id])
-		if @trip.update_attributes(params[:trip])
+		if @recipe.update_attributes(params[:trip])
 			flash[:notice] = "Successfully updated your recipe!"
 			redirect_to user_path(current_user)
 		end

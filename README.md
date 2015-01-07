@@ -1,6 +1,26 @@
 Collooking
 ==========
 
+To-Do
+-----
+1) Make the first page that you go to without having logged in the "sign up" page
+
+2) Change the name of the website in the tab bar to Collooking.
+
+3) Change name of application
+
+4) Do a complete 180 on the UI
+
+5) Progress Tree???
+
+6) Following and Followers of users
+
+7)fake task
+
+
+Original Rails Decal Fall 2014 Readme
+-------------------------------------
+
 Team Members: Aaron Lopez, Joeson Chiang, & Steven Cheng
 Demo Link: railsdecal.com
 
